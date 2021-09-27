@@ -1,0 +1,72 @@
+/* font family Inter and */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --main-bgd : hsl(233, 47%, 7%); 
+    --card-bgd : hsl(244, 38%, 16%);
+    --violet : hsl(277, 64%, 61%);
+    --white : hsl(0, 0%, 100%);
+    --main-p: hsla(0, 0%, 100%, 0.75);
+    --stat-h: hsla(0, 0%, 100%, 0.6); 
+}
+
+body{
+  
+    font-family: 'Inter', sans-serif;
+    color : white;
+    margin: 0;
+    
+}
+
+h1, h2{
+    color: var(--white);
+}
+
+p{
+    color: var(--main-p)
+}
+.text-violet{
+    color: var(--violet);
+}
+
+.main{
+    
+    background-color: var(--main-bgd);
+    height: 100vh;
+    display: flex;
+     align-items: center;
+}
+.container{
+    display: flex;
+    height: 446px;
+    width: 1110px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.content{
+    background-color: var(--card-bgd);
+    padding: 71px 100px 59px 72px;
+    border-radius: 8px;
+}
+.stats{
+    display: flex;
+    gap: 63px;
+}
+.stat-item p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--stat-h);
+    text-transform: uppercase;
+}
+.hero{
+    
+}
+.hero img{
+    border-radius: 0px 8px 8px 0px;
+    background-color : var(--violet);
+}
+
+.attribution{
+    text-align: center;
+}
