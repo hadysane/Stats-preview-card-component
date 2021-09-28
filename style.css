@@ -10,8 +10,21 @@
     --stat-h: hsla(0, 0%, 100%, 0.6); 
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+	margin: 0;
+}
+
 body{
-  
     font-family: 'Inter', sans-serif;
     color : white;
     margin: 0;
@@ -31,12 +44,12 @@ p{
 }
 
 .main{
-    
-    background-color: var(--main-bgd);
-    height: 100vh;
+	min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content:center
 }
+
 .container{
     display: flex;
     height: 446px;
@@ -65,14 +78,16 @@ p{
 .stats{
     display: flex;
     gap: 63px;
-   
 }
+
+
 .stat-item p {
     font-family: 'Lexend Deca', sans-serif;
     color: var(--stat-h);
     text-transform: uppercase;
     margin-top: 0;
     font-weight: 400;
+    font-size: 12px;
 }
 .stat-item h2{
     margin-bottom : 5px;
@@ -82,12 +97,61 @@ p{
 .hero{ 
     border-radius: 0px 8px 8px 0px;
     background-color : var(--violet);
+    background-blend-mode: multiply;
+    background-image: url('./images/image-header-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+        
 }
-.hero img{
-    border-radius: 0px 8px 8px 0px;
-    opacity: 0.5;
-}
+
 
 .attribution{
     text-align: center;
+}
+
+@media screen and (max-width: 1092px) {
+    .hero{ 
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        height: 780px;
+        width: 327px;
+        justify-content:center;
+        margin: 23.5% 0% ;
+    }
+
+    .content{
+        padding: 10% ;
+        border-radius: 0px 0px 8px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .content-header h1{
+        margin-bottom : 16px;
+        line-height: 32px;
+        font-size: 28px;
+    }
+    .content-header p {
+        line-height: 25px;
+    }
+
+    .stat-item{
+        display: flex; 
+        flex-direction: column;
+        align-items: center
+    }
+    .stats{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 24px;
+    }
 }
