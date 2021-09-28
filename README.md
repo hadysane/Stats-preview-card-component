@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [ live site URL](https://stats-preview-24g72xh1c-hadysane.vercel.app/)
+- Live Site URL: [ live site URL](https://stats-preview-card-component-hadysane.vercel.app/)
 
 
 ### Built with
